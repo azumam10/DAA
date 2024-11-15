@@ -1,0 +1,15 @@
+@startuml
+
+actor Admin
+actor Lecturer
+
+rectangle "Fakultas Management System" {
+    Admin --> (Login)
+    Admin --> (Add Lecturer Data)
+    Admin --> (Add Faculty Data)
+
+    Lecturer --> (View Lecturer Data)
+    Lecturer --> (View Faculty Data)
+}
+
+@enduml

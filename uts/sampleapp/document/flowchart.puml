@@ -1,0 +1,24 @@
+@startuml
+start
+
+:Login Page;
+if (User is Student?) then (yes)
+  :Show Faculty List;
+  :Select Faculty;
+  :Fill Registration Form;
+  :Submit Registration;
+  :Display Success Message;
+  stop
+else
+  if (User is Lecturer?) then (yes)
+    :Show Faculty List;
+    :View Faculty Data;
+    stop
+  else
+    :Show Admin Dashboard;
+    :Manage Faculties, Roles, Users;
+    stop
+  endif
+endif
+
+@enduml

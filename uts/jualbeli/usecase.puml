@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+
+actor cutomer as U
+
+rectangle "Sistem Pemesanan Bus" {
+    usecase "Melihat Ketersediaan Bus" as UC1
+    usecase "Memilih Bus" as UC2
+    usecase "Mengatur Tanggal Pemesanan" as UC3
+    usecase "Memasukkan Data Pribadi" as UC4
+    usecase "Melihat Rincian Pesanan dan Total Harga" as UC5
+    usecase "Memilih Metode Pembayaran" as UC6
+    usecase "Konfirmasi Pemesanan" as UC7
+}
+
+U --> UC1 : Membuka halaman ketersediaan
+UC1 --> UC2 : Menampilkan daftar bus yang tersedia
+U --> UC2 : Memilih bus
+U --> UC3 : Memasukkan tanggal pemesanan
+UC3 --> UC2 : Mengecek ketersediaan pada tanggal yang dipilih
+U --> UC4 : Memasukkan data pribadi
+U --> UC5 : Melihat rincian pesanan dan harga
+U --> UC6 : Memilih metode pembayaran
+U --> UC7 : Konfirmasi dan selesai
+
+@enduml
