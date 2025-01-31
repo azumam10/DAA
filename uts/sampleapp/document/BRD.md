@@ -1,5 +1,6 @@
 1. Executive Summary
-Tujuan Proyek: Aplikasi ini bertujuan untuk memungkinkan mahasiswa mendaftar ke fakultas yang sudah ada, dan memungkinkan dosen untuk melihat data fakultas yang ada.
+Tujuan Proyek: Aplikasi ini bertujuan untuk memungkinkan mahasiswa mendaftar ke fakultas yang sudah ada,
+dan memungkinkan dosen untuk melihat data fakultas yang ada.
 Sasaran:
 Mahasiswa dapat memilih fakultas dan mendaftar.
 Dosen dapat melihat daftar fakultas dan data terkait.
@@ -34,3 +35,4 @@ Admin dapat melakukan CRUD terhadap data fakultas.
 6. Constraints
 Proyek ini akan berjalan pada sistem berbasis web menggunakan Laravel.
 Fitur login menggunakan autentikasi Laravel yang mendukung peran (role) menggunakan Spatie Laravel Permission.
+
